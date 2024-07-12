@@ -1,0 +1,67 @@
+*{
+    font-family: sans-serif;
+    
+}
+
+.main{
+    /* width: 100%;  */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid;
+    background-color: black;
+    border-radius: 1rem;
+}
+.Grid{
+    display: flex;
+    height: 500;
+    width: 400px;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.Current{
+    color: rgb(245, 220, 173);
+}
+.Winner{
+    color: rgb(13, 13, 14);
+    padding: 1rem;
+    background-color: rgb(181, 232, 129);
+    width: 350px;
+    border-radius: 1rem;
+    text-align: center;
+   
+}
+.Reset{
+    color: rgb(245, 220, 173);
+    padding: .8rem;
+    margin: .5rem 0;
+    background-color: rgb(60, 60, 59);
+    width: 150px;
+    border-radius: .8rem;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 400 ;
+    border: none;
+    cursor: pointer;
+}
+.Reset:hover{
+     background-color: rgb(44, 44, 43);
+     color: rgb(240, 179, 35);
+}
+
+@media (max-width: 480px) {
+    .Grid {
+        max-width: 100%; /* Take full width for very small screens */
+        gap: 0.25rem; /* Further reduce gap for very small screens */
+    }
+
+    .Winner {
+        width: 80%; /* Take full width for very small screens */
+    }
+
+    .Reset {
+        width: 90%; /* Take 90% width for very small screens */
+    }
+}
